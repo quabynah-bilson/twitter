@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { kAppName } from "../util/constants";
+import { kAppName, kBannerImage } from "../util/constants";
 import { FiSearch } from "react-icons/fi";
 import { useState } from "react";
 
@@ -93,10 +93,8 @@ export default function Home({ users }) {
               {/* banner image */}
               <div className="overflow-hidden h-1/4 w-full rounded-br-3xl absolute top-0 inset-x-0">
                 <img
-                  src={
-                    "https://images.unsplash.com/photo-1577044685231-70e99274404c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80"
-                  }
-                  className="object-cover w-full h-full"
+                  src={kBannerImage}
+                  className="object-cover object-center w-full h-full"
                 />
               </div>
 
