@@ -74,6 +74,7 @@ export default function Home({ users }) {
                         height={40}
                         width={40}
                         objectFit="cover"
+                        alt={currentUser.id}
                       />
                     </div>
 
@@ -92,8 +93,11 @@ export default function Home({ users }) {
             <div className="relative h-full w-full">
               {/* banner image */}
               <div className="overflow-hidden h-1/4 w-full rounded-br-3xl absolute top-0 inset-x-0">
-                <img
+                <Image
                   src={kBannerImage}
+                  alt="banner"
+                  width={"100"}
+                  height={"25"}
                   className="object-cover object-center w-full h-full"
                 />
               </div>
